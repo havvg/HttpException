@@ -2,7 +2,7 @@
 
 namespace Http\Exception\Client;
 
-class RequestRangeNotSatisfiable extends AbstractException
+class RequestedRangeNotSatisfiable extends AbstractException
 {
   const STATUS_CODE = 416;
 }
