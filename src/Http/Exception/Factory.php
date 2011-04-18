@@ -25,6 +25,12 @@ class Factory
     416 => 'RequestedRangeNotSatisfiable',
     417 => 'ExpectationFailed',
     418 => 'ImATeapot',
+    421 => 'ThereAreTooManyConnectionsFromYourInternetAddress',
+    422 => 'UnprocessableEntity',
+    423 => 'Locked',
+    424 => 'FailedDependency',
+    425 => 'UnorderedCollection',
+    426 => 'UpgradeRequired',
 
     // 5xx: Server Error - The server failed to fulfill an apparently valid request.
     500 => 'InternalServerError',
@@ -33,7 +39,10 @@ class Factory
     503 => 'ServiceUnavailable',
     504 => 'GatewayTimeout',
     505 => 'HttpVersionNotSupported',
+    506 => 'VariantAlsoNegotiates',
+    507 => 'InsuffientStorage',
     509 => 'BandwidthLimitExceeded',
+    510 => 'NotExtended',
   );
 
   /**

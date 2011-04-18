@@ -39,4 +39,29 @@ class FactoryTest extends \PHPUnit_Framework_TestCase
     $this->assertEquals($code, constant("$className::STATUS_CODE"));
     $this->assertEquals($expectedClassName, $className);
   }
+
+  public function testNothingMissing()
+  {
+    $clientErrors = 25;
+    $serverErrors = 10;
+
+    foreach (\Http\Exception\Factory::$codeTable as $code => $error)
+    {
+      if ($code >= 500)
+      {
+        $serverErrors--;
+      }
+      elseif ($code >= 400)
+      {
+        $clientErrors--;
+      }
+      else
+      {
+        $this->fail(sprintf('The given error code %d is no valid HTTP error code.', $code));
+      }
+    }
+
+    $this->assertEquals(0, $clientErrors, 'Every client error covered.');
+    $this->assertEquals(0, $serverErrors, 'Every server error covered.');
+  }
 }
