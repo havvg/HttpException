@@ -31,6 +31,7 @@ class Factory
     424 => 'FailedDependency',
     425 => 'UnorderedCollection',
     426 => 'UpgradeRequired',
+    451 => 'UnavailableForLegalReasons',
 
     // 5xx: Server Error - The server failed to fulfill an apparently valid request.
     500 => 'InternalServerError',

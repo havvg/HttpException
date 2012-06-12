@@ -42,7 +42,7 @@ class FactoryTest extends \PHPUnit_Framework_TestCase
 
   public function testNothingMissing()
   {
-    $clientErrors = 25;
+    $clientErrors = 26;
     $serverErrors = 10;
 
     foreach (\Http\Exception\Factory::$codeTable as $code => $error)

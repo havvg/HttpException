@@ -31,6 +31,7 @@ require_once $dir . 'UnorderedCollection.php';
 require_once $dir . 'UnprocessableEntity.php';
 require_once $dir . 'UnsupportedMediaType.php';
 require_once $dir . 'UpgradeRequired.php';
+require_once $dir . 'UnavailableForLegalReasons.php';
 
 // Server Errors
 $dir = __DIR__ . '/../src/Http/Exception/Server/';
