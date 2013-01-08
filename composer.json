@@ -1,0 +1,25 @@
+{
+    "name": "havvg/http-exception",
+    "description": "A collection of exception classes to reflect HTTP status codes.",
+    "keywords": [ "http", "exception" ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Toni Uebernickel",
+            "email": "tuebernickel@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.3"
+    },
+    "autoload": {
+        "psr-0": {
+            "Http": [ "src", "tests" ]
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0.x-dev"
+        }
+    }
+}

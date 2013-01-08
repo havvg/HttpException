@@ -40,7 +40,7 @@ class Factory
     504 => 'GatewayTimeout',
     505 => 'HttpVersionNotSupported',
     506 => 'VariantAlsoNegotiates',
-    507 => 'InsuffientStorage',
+    507 => 'InsufficientStorage',
     509 => 'BandwidthLimitExceeded',
     510 => 'NotExtended',
   );
@@ -49,7 +49,7 @@ class Factory
    * Create a HTTP exception based on given status code.
    *
    * @throws \InvalidArgumentException The given status code is no HTTP error code.
-   * @throws \InvalidArgumentExceptino The given error code does not exist.
+   * @throws \InvalidArgumentException The given error code does not exist.
    *
    * @param int $status
    *

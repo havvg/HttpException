@@ -2,7 +2,7 @@
 
 namespace Http\Exception\Server;
 
-class InsuffientStorage extends AbstractException
+class InsufficientStorage extends AbstractException
 {
   const STATUS_CODE = 507;
 }
